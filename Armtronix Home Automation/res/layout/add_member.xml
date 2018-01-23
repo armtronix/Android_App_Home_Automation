@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <EditText
+        android:id="@+id/member_et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="5" 
+        android:layout_marginTop="5dp"
+        android:hint="Enter Name ...">
+        <requestFocus />
+    </EditText>
+     <EditText
+        android:id="@+id/member_et_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="5" 
+        android:layout_marginTop="5dp"
+        android:hint="Enter IP ...">    
+    </EditText>
+      <EditText
+        android:id="@+id/member_et_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="5" 
+        android:layout_marginTop="5dp"
+        android:hint="Enter PORT...">    
+    </EditText>
+         <EditText
+        android:id="@+id/member_et_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="5" 
+        android:inputType="none"
+        android:editable="false"
+        android:layout_marginTop="5dp"
+        android:hint="Enter BOARD ..."> 
+    </EditText>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dip"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+    <Button
+        android:id="@+id/add_bt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ADD" />
+
+</LinearLayout>
