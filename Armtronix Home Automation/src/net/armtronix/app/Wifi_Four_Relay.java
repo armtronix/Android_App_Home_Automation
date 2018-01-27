@@ -39,7 +39,6 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
-
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -203,16 +202,9 @@ public class Wifi_Four_Relay extends Activity {
 
                int progresValue, boolean fromUser) {
                progress = progresValue;
-               String temp="br "+(String.valueOf(progress))+"\n\r";
-               try {
-				PrintWriter out = new PrintWriter(new BufferedWriter(
-							new OutputStreamWriter(socket.getOutputStream())),
-							true);
-				out.println(temp);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+               //String temp="br "+(String.valueOf(progress))+"\n\r";
+               temp="/gpio?state_dimmer="+(String.valueOf(progress*1));
+       		   new HTTPdemo().execute("");
                
 			
 			

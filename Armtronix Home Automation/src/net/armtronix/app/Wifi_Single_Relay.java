@@ -200,7 +200,7 @@ public class Wifi_Single_Relay extends Activity {
                int progresValue, boolean fromUser) {
                progress = progresValue;
                //String temp="br "+(String.valueOf(progress))+"\n\r";
-               temp_send="/gpio?state_dimmer="+(String.valueOf(progress*10));
+               temp_send="/gpio?state_dimmer="+(String.valueOf(progress*1));
        		   new HTTPdemo().execute("");
                
 			

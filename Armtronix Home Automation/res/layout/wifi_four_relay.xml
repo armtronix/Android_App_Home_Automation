@@ -74,7 +74,7 @@
                 android:layout_alignLeft="@+id/myButton"
                 android:layout_below="@+id/myButton"
                 android:layout_marginTop="350dp" 
-                android:max="122"/>
+                android:max="99"/>
 			 <EditText
                 android:id="@+id/Textget"
                 android:layout_width="fill_parent"
